@@ -16,8 +16,8 @@ public class Homecontroller {
     @GetMapping("/")
     // Tell Spring Boot this methods returns a HTTP response
     @ResponseBody
-    public String helloworld(){
-        return "<h1>Hello World<h1>";
+    public String liquorhouse(){
+        return "homepage";
     }
 
     @GetMapping("/about-us")

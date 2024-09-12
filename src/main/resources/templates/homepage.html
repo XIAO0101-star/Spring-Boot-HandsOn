@@ -1,0 +1,26 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+    th:replace="~{base::html(
+        ~{::title},
+        ~{::content},
+        ~{::additionalCss},
+        ~{}
+    )}"
+>
+
+<th:block th:fragment="additionalCss">
+    <link rel="stylesheet" href="https://www.theliquorshop.com.sg/cdn/shop/t/70/assets/theme.css">
+</th:block>
+
+<title>Liquor House</title>
+
+<th:block th:fragment="content">
+    <h1>Enjoy anywhere, anytime!</h1>
+    <img src="travel.jpg" id="champion-image"/>
+    <p>Your one-stop place to stock up onall
+        your travelling essentials
+    </p>
+    <p>Current Date Time: <span th:text="${currentDateTime}"></span></p>
+</th:block>
+
+
+</html>
